@@ -1,12 +1,12 @@
 # 🏗️ StrucAI – AI-Powered Structural Risk Predictor
 
-StrucAI is an intelligent web app that uses machine learning to predict the **structural risk level** of buildings or infrastructure — based on simulated sensor data. It helps engineers, inspectors, and urban planners make **data-driven decisions** faster and smarter.
+StrucAI is an intelligent web app that uses machine learning to predict the **structural risk level** of buildings or infrastructure, based on simulated sensor data. It helps engineers, inspectors, and urban planners make **data-driven decisions** faster and smarter.
 
 ---
 
 ## 💡 Problem Statement
 
-Many developing regions face challenges with **timely structural inspections**, leading to overlooked wear, cracks, and strain — and ultimately, **structural failures**. Traditional inspections are manual, slow, and expensive.
+Many developing regions face challenges with **timely structural inspections**, leading to overlooked wear, cracks, and strain, and ultimately, **structural failures**. Traditional inspections are manual, slow, and expensive.
 
 ---
 
@@ -39,7 +39,8 @@ It also displays the **confidence level** of the AI prediction and visualizes **
 
 ## 🖼️ Demo Preview
 
-> Coming soon — video walkthrough and screenshots
+<img width="976" height="600" alt="image" src="https://github.com/user-attachments/assets/618c43bb-85ce-4a38-895d-81e87f346191" />
+
 
 ---
 
@@ -48,12 +49,12 @@ It also displays the **confidence level** of the AI prediction and visualizes **
 ```
 StrucAI/
 │
-├── strucai_app.py                   # Main Streamlit app
-├── strucai_model.pkl                # Trained ML model
-├── strucai_scaler.pkl               # Scaler used in preprocessing
-├── sample_data.csv                  # Sample sensor dataset for demo
-├── strucai_app_with_monthly_peaks.py # Extended app with peak trends
-└── README.md                        # You're here!
+├── strucai_app.py
+├── strucai_label_encoder.pkl
+├── strucai_rf_model.pkl
+├── strucai_simulated_data_10k.csv
+├── requirements.txt
+└── README.md
 ```
 
 ---
@@ -75,7 +76,7 @@ StrucAI/
 
 3. Run the Streamlit app:
    ```bash
-   streamlit run strucai_app_with_monthly_peaks.py
+   streamlit run strucai_app.py
    ```
 
 ---
@@ -96,28 +97,12 @@ The model was trained on 10,000 rows of synthetic structural sensor data, with f
 
 ---
 
-## ❤️ Made With
+## Made With
 
 - Python 🐍
 - Streamlit ⚡
 - Scikit-learn 🤖
-- The #3MTT Program by @NITDANigeria
-
 ---
 
-## 🙏 Acknowledgements
-
-This project was built by **Sherif Olalekan Akeem** during the 3MTT Data & AI program.  
-Thanks to @3mttNigeria, @bosuntijani, @IHSTowers, and @NITDANigeria for powering the journey.
-
----
-
-## 🔗 Connect
-
-- [LinkedIn](https://www.linkedin.com/in/yourprofile)
-- [Twitter](https://twitter.com/yourhandle)
-- [YouTube Demo](https://youtu.be/your-video-link) (if available)
-
----
 
 > “Built with ❤️ at the intersection of civil engineering and artificial intelligence.”
